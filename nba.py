@@ -5,7 +5,7 @@ import csv
 ###########WARNING: THIS CODE IS MEANT TO RUN ONCE################################
 info = []
 # looping though 52 pages as api call was limit to 100 per page
-for i in range(0,53,1):
+for i in range(1,53,1):
     url = "https://free-nba.p.rapidapi.com/players"
 
     querystring = {"page":"{varname}".format(varname=i),"per_page":"5000"}
