@@ -56,7 +56,6 @@ print(info)
 with open('nbainfo.json') as f:
     data = json.load(f)
 
-count = 0
 # creating a csv file
 with open('nba.csv', 'w', newline='') as f:
     w = csv.writer(f)
