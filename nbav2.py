@@ -54,7 +54,7 @@ for i in range(1,total_limit,1):
 print(info)
 #creating a new json file and loading that data
 with open('nbainfo.json') as f:
-    data = json.load(f)
+    data = json.dump(info, f)
 
 # creating a csv file
 with open('nba.csv', 'w', newline='') as f:
